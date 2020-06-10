@@ -53,7 +53,6 @@ function generateToken(user) {
 }
 
 router.get("/users", uMid.restricted, (req, res) => {
-  console.log*"restricted"
     Users.find()
     .then( users => {
         res.status(200).json(users)
